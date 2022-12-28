@@ -3,6 +3,7 @@ const helmet = require('helmet');
 const cors = require('cors');
 const { ErrorResponseObject } = require('./common/http');
 const routes = require('./routes');
+require('./services/allowCors');
 
 const app = express();
 
